@@ -21,11 +21,7 @@ pub fn main() {
         v: 2,
     });
     for c in list.iter() {
-        let a = A {
-            list: Vec::new(),
-            v: 2,
-        };
         //⬇️这里报错 cannot borrow as mutable//move out of `list` occurs here
-        a.Upt(list, 1);
+        c.Upt(list, 1);
     }
 }
